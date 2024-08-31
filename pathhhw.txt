@@ -1,0 +1,18 @@
+{
+            name:"button",
+            x:100,
+            y:100,
+                
+            sizeX:500,
+            sizeY:100,
+                
+            onClicked:function(){
+                console.log("1235f")
+            },
+                
+            style:{
+                color:"rgb(100,0,255)"
+            },
+                
+            _id:"222183095705778"
+        }
