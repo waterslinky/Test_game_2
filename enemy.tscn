@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://blalghfmoq0m1"]
+
+[ext_resource type="Script" path="res://scenes/enemy.gd" id="1_5fjjo"]
+[ext_resource type="Texture2D" uid="uid://7tbcavkh88jm" path="res://assets/textures/enemy.png" id="1_5xk8u"]
+
+[node name="enemy" type="Node2D"]
+script = ExtResource("1_5fjjo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -16)
+texture = ExtResource("1_5xk8u")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(14, 0)
+target_position = Vector2(1, 0)
+
+[node name="RayCast2DRightDown" type="RayCast2D" parent="."]
+position = Vector2(15, -1)
+target_position = Vector2(0, 1)
+
+[node name="RayCast2DLeftDown" type="RayCast2D" parent="."]
+position = Vector2(-12, -1)
+target_position = Vector2(0, 1)
+
+[node name="RayCast2DRight" type="RayCast2D" parent="."]
+position = Vector2(-11, 0)
+target_position = Vector2(-1, 0)
